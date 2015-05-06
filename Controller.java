@@ -26,7 +26,13 @@ public class Controller
       System.out.println(findWinner());
    }
 
-   public static void dealHands(int x){
+   public static void dealHands(int x)
+   {
+      for(int i = 1; i <= x; i++)
+      {
+          //hand1.add();
+          //hand2.add();
+      }
       //TODO: Deal x cards to each player
    }
 
