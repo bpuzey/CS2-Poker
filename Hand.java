@@ -39,6 +39,7 @@ public class Hand implements Comparable {
 
    public int compareTo(Object x){
       Hand other = (Hand)x;
+      return 0;//change later, just for compiling
       //TODO: Compare hands by ordering above; return -1, 1, or 0
    }
 }
