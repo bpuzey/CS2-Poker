@@ -41,5 +41,11 @@ public class Hand implements Comparable {
       Hand other = (Hand)x;
       return 0;//change later, just for compiling
       //TODO: Compare hands by ordering above; return -1, 1, or 0
+      if(hand.convertValue(hand.handValue()) - other.convertValue(other.handValue()) > 0)
+         return 1;
+      if(hand.convertValue(hand.handValue()) - other.convertValue(other.handValue()) < 0)
+         return (-1);
+      if(hand.convertValue(hand.handValue()) - other.convertValue(other.handValue()) == 0)
+         return 0;
    }
 }
