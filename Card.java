@@ -2,15 +2,18 @@
 
 import java.util.*;
 
-public class Card implements Comparable {
+public class Card implements Comparable
+{
    public int value;
    public String suit;
-   public Card(int val, String s){
+   public Card(int val, String s)
+   {
       value = val;
       suit = s;
    }
 
-   public String toString(){
+   public String toString()
+   {
       String s = "" + value;
       if(value == 11){s = "J";}
       if(value == 12){s = "Q";}
@@ -19,7 +22,8 @@ public class Card implements Comparable {
       return s + suit;
    }
 
-   public int compareTo(Object x){
+   public int compareTo(Object x)
+   {
       Card other = (Card)x;
       return this.value - other.value;
    }

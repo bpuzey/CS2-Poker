@@ -6,7 +6,8 @@ public class Controller
    private static Hand hand1;
    private static Hand hand2;
 
-   public static void main(String[] args){
+   public static void main(String[] args)
+   {
       deck = new Deck();
       //System.out.println(deck);
       hand1 = new Hand();
@@ -36,7 +37,8 @@ public class Controller
       //TODO: Deal x cards to each player
    }
 
-   public static String findWinner(){
+   public static String findWinner()
+   {
       int result = hand1.compareTo(hand2);
       return "TODO: Who wins?";
       return hand1.compareTo(hand2);

@@ -1,10 +1,12 @@
 import java.util.*;
 
-public class Deck {
+public class Deck
+{
    private ArrayList<Card> deck;
    private Random rng = new Random();
 
-   public Deck(){
+   public Deck()
+   {
       deck = new ArrayList<Card>();
       for(int i = 2; i < 15; i++)
       {
@@ -20,12 +22,14 @@ public class Deck {
       //TODO: Add a card (2-14) of each suit (h,s,d,c)
    }
 
-   public Card remove(){
+   public Card remove()
+   {
       int rand = rng.nextInt(deck.size()-1);
       return deck.remove(rand);
    }
 
-   public String toString(){
+   public String toString()
+   {
       return deck.toString();
    }
 }
