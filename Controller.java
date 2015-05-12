@@ -28,10 +28,10 @@ public class Controller
 
    public static void dealHands(int x)
    {
-      for(int i = 1; i <= x; i++)
+      for(int i = 0; i < x; i++)
       {
-          //hand1.add();
-          //hand2.add();
+          hand1.add(deck.remove);
+          hand2.add(deck.remove);
       }
       //TODO: Deal x cards to each player
    }
@@ -39,5 +39,6 @@ public class Controller
    public static String findWinner(){
       int result = hand1.compareTo(hand2);
       return "TODO: Who wins?";
+      return hand1.compareTo(hand2);
    }
 }
